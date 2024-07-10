@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title class="mi-linea">Descubriendo San Martín</title>
+<style>
+  body {
+    background-color: #67C292; /* */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #1e474a; /* */
+    color: #ffffff; /*  */
+    padding: 10px 0;
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff; /*  */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  nav {
+    background-color: #4e878b; /*  */
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: #ffffff; /*  */
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  nav a:hover {
+    background-color: #357a7d; /* */
+  }
+            .mi-linea {
+    font-size: 80px;
+    font-style: arial;
+  }
+    .sama-chad {
+    font-size: 30px;
+    font-style: arial;
+  } 
+      .localizacion-tamaño {
+    font-size: 20px;
+    font-style: arial;
+    color: black;
+   }
+    .solo-subpaginas {
+    font-size: 20px;
+    font-style: arial;
+    color: black;
+  }
+            footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+</head>
+<body>
+<header>
+  <h1>Descubriendo San Martín</h1>
+</header>
+
+<nav>
+  <a href="economia.html">Economia</a>
+  <a href="historia.html">Historia</a>
+  <a href="geografia.html">Geografia</a>
+</nav>
+
+<div class="container">
+  <h2>Inicio</h2>
+    <section>
+        <p class="localizacion-tamaño">Bienvenido a nuestra guía virtual sobre la región de San Martín, un lugar lleno de historia, cultura y belleza natural en Peru. Situada en el noreste de Perú, San Martín es conocida por su selva amazónica, sus sitios arqueológicos fascinantes y sus comunidades indígenas vibrantes.</p>
+        <p class="localizacion-tamaño">En este documento, explicaremos los aspectos más destacados de de esta región. ¡Acompáñanos en este viaje de descubrimiento!</p> 
+    </section>
+<div style="text-align: center; margin-top: 20px;">
+  <img src="imagenes/plazadesanmartin.jpg" alt="Animación de desplazamiento" style="width: 600px; height: auto;">
+</div>
+<h2>Formulario</h2>
+    <footer>
+        <p>Derechos de autor © 2024 Mi pagina personal "Alejandro Aleman, Rafael Cerna, Sebastian Uriarte 9no y C"</p>
+    </footer>
+</body>
+</html> 
+  <form action="/enviar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="interes">¿Por qué estás interesado en la página?</label><br>
+        <textarea id="interes" name="interes" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="pregunta">¿Qué quieres saber de San Martín?</label><br>
+        <textarea id="pregunta" name="pregunta" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="preferencia">¿Qué te interesa más, gastronomía, sociedad, historia?</label><br>
+        <select id="preferencia" name="preferencia" required>
+            <option value="">Selecciona una opción</option>
+            <option value="gastronomia">Gastronomía</option>
+            <option value="sociedad">Sociedad</option>
+            <option value="historia">Historia</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

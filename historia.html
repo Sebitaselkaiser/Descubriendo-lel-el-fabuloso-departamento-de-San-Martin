@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la región San Martín</title>
+    <style>
+               body {
+            background-color: #0F4D3D;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #0C3024;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        ul {
+            background-color: #4e878b;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+        ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        ul li a:hover {
+            background-color: #357a7d;
+        }
+        .mi-linea {
+            font-size: 50px; 
+            font-style: arial; 
+        }
+        .sama-chad {
+            font-size: 30px; 
+            font-style: arial;
+        }
+        .localizacion-tamaño {
+            font-size: 25px; 
+            font-style: arial;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ffffff; /* Color inicial del borde blanco */
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        table th {
+            background-color: #4e878b; /* Color de fondo de encabezado similar al ejemplo */
+            color: #ffffff; /* Color de texto del encabezado */
+        }
+        table td:hover {
+            transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+            border-color: #000000; /* Cambio de color del borde a negro al pasar el mouse */
+        }
+        .timeline {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 50px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .event {
+            width: calc(100% / 6);
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .event .point {
+            background-color: #007bff;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+        .event .content {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: -70px;
+            transform: translateX(-50%) scale(0);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            z-index: 2;
+        }
+        .event:hover .point {
+            transform: scale(1.2);
+        }
+        .event:hover .content {
+            transform: translateX(-50%) scale(1);
+            opacity: 1;
+        }
+        ul {
+            background-color: #4e878b; /* Color de fondo similar al ejemplo */
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+        ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        ul li a {
+            color: #ffffff; /* Color de texto similar al ejemplo */
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        ul li a:hover {
+            background-color: #357a7d; /* Color de fondo al pasar el cursor similar al ejemplo */
+        }
+        .mi-linea {
+            font-size: 50px; 
+            font-style: arial; 
+        }
+        .sama-chad {
+            font-size: 30px; 
+            font-style: arial;
+        }
+        .localizacion-tamaño {
+            font-size: 25px; 
+            font-style: arial;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ffffff; /* Color inicial del borde blanco */
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        table th {
+            background-color: #4e878b; /* Color de fondo de encabezado similar al ejemplo */
+            color: #ffffff; /* Color de texto del encabezado */
+        }
+        table td:hover {
+            transform: scale(1.1); /* Aumento de tamaño al pasar el mouse */
+            border-color: #000000; /* Cambio de color del borde a negro al pasar el mouse */
+        }
+                footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="mi-linea">Historia de la región San Martín</h1>
+        <nav>
+            <ul>
+                <li><a href="geografia.html">Geografía</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="economia.html">Economía</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <tr>
+            <th>Tema de historia</th>
+            <th>Explicacion</th>
+        </tr>
+        <tr>
+            <td class="localizacion-tamaño">Fundacion</td>
+            <td>San Martin fue fundado el 4 de septiembre de 1906, sus inicios datan en la amazonía peruana(época del virreinato), en el que en ese tiempo no existía san martín, si no moyobamba (fundada por los conquistadores en 1540), además cabe a recalcar que la amazonía peruana una región poco explorada por los españoles(zona donde está moyobamba).En ese tiempo la población estaba conformada principalmente por mineros y soldados, estos se dedicaban  a la  evangelización y expedición de comunidades, luego de 42 años se fundó la ciudad de tarapoto y luego ciudades como Lamas y Juanjui. A inicios del siglo XX sucedió un cambio radical en moyobamba , resulta que se dio un esplendor en el caucho que fue uno de los aspectos fundamentales en la economía de la región, es por ello que vinieron familias extranjeras (específicamente hablando,francesas) que dieron el impulso para el desarrollo comercial y en consecuencia, en 1906 se lograría unir  las provincias de moyobamba,huallaga y santa cruz para así lograr la creación de san martín, además no hay que olvidar que ese nombre lo pusieron en honor a don  josé de san martín (libertador del perú). Actualmente es una de las regiones más hermosas y atractivas del Perú, con diferentes  tradiciones y costumbres que los diferencian de los demás.<img src="imagenes/rio.jpg" width="500" height="300"></td>
+        </tr>
+        <tr>
+            <td class="localizacion-tamaño">Culturas que habitaron</td>
+            <td>
+            En San Martín habitaron muchas culturas, en la provincia de Rioja, San Martín, se establecieron los Uquihuas y Chepenes (actualmente extintos). Los uquihuas eran una cultura quechua hablante y estos pobladores comenzaron a desaparecer debido a la destrucción de los árboles, su principal fuente de recursos. En cambio, los Chepenes sobrevivieron como civilización por un periodo más prolongado, sin embargo, desaparecieron debido a la colonización española y la migración de sus pobladores en busca de mejores oportunidades. También existieron culturas aún más antiguas, las preincas, estas fueron:
+            <hr>
+            Los chachapoyas: Los chachapoyas fueron una cultura que estuvo ubicada principalmente en amazonas, una región del Perú, sin embargo se cree que en sus inicios estuvo asentada en San Martín, por ello tuvo mucha influencia en los pobladores de esa zona. Algunas fuentes mencionan que los chachapoyas tuvieron un gobierno compuesto por curacazgos (similar a los inkas). Sin embargo, en la revista digital de la PUCP sobre la organización sociopolítica de los chachapoyas se menciona que debido a la información recopilada por los historiadores (pinturas rupestres, formas de entierro), esta cultura solo poseía jefes de guerra que dirigen a la sociedad, por lo que sus clases sociales eran simples pero eficaces.
+            <img src="imagenes/ubicacion1.jpg" width="300" height="200" style="display: block; margin: 0 auto;">
+            Los chachapoyas creían en varios dioses (politeísmo), por ejemplo:
+            <li>
+           Pachacamac, era muy importante para todos los pueblos de la region andina y selvática porque se le consideraba el dios creador de todo lo que existe.
+           <img src="imagenes/dios1.jpg" width="300" height="200" style="display: block; margin: 0 auto;">
+            </li>
+            <li>
+           Viracocha, los chachapoyas adoran a este dios porque el trajo la “civilización” a la humanidad.
+           <img src="imagenes/raimondi.jpg" width="100" height="300" style="display: block; margin: 0 auto;">
+            </li>
+           Los chachapoyas tuvieron muchos aportes culturales, entre ellos destacan su cerámica, esta representaba algunas costumbres que poseían y en algunos casos era policroma, se usaban colores oscuros. También chachapoyas destaco por su textilería y arquitectura, la última fue necesaria debido a la influencia de la geografia en su territorio (lluvias constantes).
+           <img src="imagenes/ceramica4.jpg" width="300" height="200">
+           <hr>
+           La cultura Mayo: Estuvo ubicada en el Amazonas, sin embargo tiempo después durante su máxima expansión logró abarcar una parte de San Martín. La sociedad de la cultura mayo fue similar a la de los chachapoyas, con jefes que supervisan a la sociedad, aunque también existía una rama de los agricultores que eran los recolectores que debido a la flora que había permitieron la extracción de frutas u otros alimentos de los bosques y árboles. Las personas de la cultura Mayo creían en varios dioses, algunos de ellos eran:
+           Wiracocha: Este dios forma parte de la cosmovisión andina, sin embargo al ser difundido por los inkas, este pasó a formar parte de las creencias en esta región, se le considera el creador de todo.
+           Pachamama: Significa “madre tierra” y al igual que Wiracocha, el culto a esta divinidad, también fue a causa de la imposición de las creencias incaicas en la cultura Mayo. La cultura Mayo dio muchos aportes culturales, entre ellos se encuentra la agricultura, ellos dominaron la técnica de las terrazas agrícolas, a pesar de la geografía de su región. Esta técnica fue transmitida por los incas cuando conquistaron esa zona. También, la cultura Mayo dejó muchos aportes medicinales, específicamente el uso de hierbas para tratar enfermedades, si bien es cierto que en la actualidad ya no se usan, hace mucho tiempo si servían de cura.
+           <img src="imagenes/terrazas.jpg" width="300" height="200">
+            </td>
+        </tr>
+        <tr>
+            <td class="localizacion-tamaño">Gastronomia y su historia</td>
+            <td> 
+            <li class="localizacion-tamaño">Tacacho con cecina</li>
+            Los ingredientes necesarios para realizar este platillo son, chicharrón de chancho, manteca, cecina y plátano. La palabra tacacho deriva del quechua, taka chu, lo que tiene como significado ‘’lo golpeado’’en español, estas palabras, en cierta parte describen un parte de la preparación de este platillo,  ya que en su elaboración se debe aplastar un plátano, Los Sanmartinenses suelen usar el plátano verde, más conocido como plátano bellaco, esto debido a su sabor, longitud, entre otras características. Esta  delicia culinaria es comida en cualquier momento del día, usualmente se come en la cena.
+            <img src="imagenes/photo.jpg" width="300" height="200">
+            <hr>
+            <li class="localizacion-tamaño">El juane</li>
+            Este plato tiene origen en moyobamba, el cual consiste en un guiso de gallina  que está sazonado y recubierto con hojas de bijao. Este plato podría dar inicio desde la época prehispánica, cuando los peruanos calentaban sus meriendas envueltas en hojas de plátano. La palabra “juane” proviene de “huane”, que derivó de “huanar”, que significa “amortiguado”. 
+            <img src="imagenes/juane.jpg" width="300" height="200">
+            <hr>
+            <li class="localizacion-tamaño">Patarashca</li>
+            La patarashca tiene sus raíces en las tradiciones culinarias de las comunidades indígenas de la Amazonía peruana, donde las hojas de bijao se utilizan desde tiempos ancestrales para cocinar alimentos de manera envuelta. Este método no solo preserva el sabor de los ingredientes, sino que también aprovecha las propiedades naturales de las hojas.
+            <img src="imagenes/patarashca.jpg" width="300" height="200">
+            </td>
+        </tr>
+        <tr>
+            <td class="localizacion-tamaño">Folklore y su historia</td>
+            <td>
+            Danza: El departamento de San Martín sobresale en sus danzas, esto gracias a las influencias de los lamistos,los suchiles,cambazas. Algunas de las danzas que podemos encontrar son:
+            <li>Danza de San Martín fiesta patronal de la cruz: Esta danza tiene la finalidad de honrar a la Cruz de Jaspe, además se constituye el culto al importantísimo y sagrado símbolo de cristiandad.</li>
+            <li>Danza el pillo: Esta danza se realiza en los meses de febrero y marzo, esta danza nos quiere dar a entender sobre luchar para acabar el mal.Un dato curioso  es que esta danza de dos jóvenes habitantes que habitaban en el pueblo, los cuales luchan por ser el más poderoso. Se dice que esta danza fue usada por los sacerdotes para realizar rituales.</li>
+            <li>Danza Choba Choba: Esta danza tiene un peculiar significado detrás y es que esa danza representa trabajo colectivo,ayuda mutua y lazos de reciprocidad y familiar. En esta danza, los hombres trabajan y se encargan de buscar madera,llanas,hojas,etc para la construcción de la nueva pareja.</li>
+            <img src="imagenes/chobachoba.jpg" width="300" height="200">
+            <hr>
+            Musica:
+            La música de san martín  ha influido de gran manera en las actividades que se realizan en el territorio, como lo pueden ser cumpleaños,bodas,quinceañeros, se usa la música para dar un ambiente especial(felicidad,además de identificarse y sentirse a gusto con su cultura) a esas actividades.En San Martín se escuchan músicas como “la pandilla”,”el huayno”, “el chimaichi”, estas músicas son identificadas y reconocidas por las fiestas.
+            <img src="imagenes/baile.jpg" width="300" height="200">
+            </td>
+        </tr>
+    </table>
+
+<h2>Linea del tiempo sobre la historia de San Martin</h2>
+ <div class="timeline">
+        <div class="event" style="top: 20px;">
+            <div class="point">1</div>
+
+            <div class="content">
+                <h3>Origenes y fundación</h3>
+                <p>
+                <li>Prehistoria: Los primeros hombres llegaron a la selva del Peru durante el paleolitico tardio (10 000 A.C)</li>
+                <li>Epoca preincaica: influencia de loschachapoyas (1000 - 1200 D.C)</li>
+                <li>Conquista Inca: Incorporacion de Chachapoyas y parte de San Martin al imperio incaico (1475 D.C)</li>
+                </p>
+            </div>
+        </div>
+
+        <div class="event" style="top: 20px;">
+            <div class="point">2</div>
+            <div class="content">
+                <h3>Colonizacion y virreinato</h3>
+                <p>
+                <li>Fundacion por los españoles:La ciudad de Moyobamba como capital del departamento(1540)</li>
+                <li>Mejora de las actividades economicas: Explotacion de los recursos naturales y creacion de haciendas (1600-1700)</li>
+                <li>Evangelizacion del departamento (1540-1709)</li>
+                </p>
+            </div>
+        </div>
+
+        <div class="event" style="top: 20px;">
+            <div class="point">3</div>
+            <div class="content">
+                <h3>Personajes importantes</h3>
+                <p>
+                <li>Faustino Sanchez Carrion, fue un politico y abogado que desempeño un rol muy importante en la independencia del Peru (1792)</li>
+                <li>Cesar Vallejo, fue un poeta y el principal difusor de esto en el siglo (1892)</li>
+                </p>
+            </div>
+        </div>
+
+        <div class="event" style="top: 20px;">
+            <div class="point">4</div>
+            <div class="content">
+                <h3>Fundacion (oficial)</h3>
+                <p>
+                <li>Se reconoce oficialmente a San Martin como provincia en la region nororiental del Peru (1906)</li>
+                <li>Se reconoce oficialmente a Moyobamba como capital de San Martin (1932)</li>
+                </p>
+            </div>
+        </div>
+
+        <div class="event" style="top: 20px;">
+            <div class="point">5</div>
+            <div class="content">
+                <h3>Problemas de violencia politica</h3>
+                <p>El principal problema de vioencia politica en esta region fue Sendero Luminoso,, que sembrando el terror queria apoderarse del gobieron peruano. Este grupo terrorista no solo provoco muertes sino tambien ataques de las autoridades a las comunidades de San Martin (1980 - 1990)</p>
+            </div>
+        </div>
+
+        <div class="event" style="top: 20px;">
+            <div class="point">6</div>
+            <div class="content">
+                <h3>Actualidad</h3>
+                <p>Tanto el gobierno regional de San Martin y el estado peruano se encuentran reactivando el turismo endicha provincia (su principalactividad economica),mediante campañas o anuncios (2024)</p>
+            </div>
+        </div>
+    </div>
+<img src="imagenes/lineadetiempo.jpg" width="500" height="350" style="display: block; margin: 0 auto;">
+<h2>Video</h2>
+<section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-LY7PkWMm7k?si=z5NZ8EI540XrSu-5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+    <footer>
+        <p>Derechos de autor © 2024 Mi pagina personal "Alejandro Aleman, 9no y C"</p>
+    </footer>
+</body>
+</html>
+
+
